@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.container1{
+    width: 100%;
+    background-color: white;
+    box-shadow: 10px 30px 40px whitesmoke;
+}
+.container1 h1 {
+    color: #F9629F;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    font-size: xx-large;
+  
+}
+.cont1 div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: px;
+    margin-top: 10px;
+}
+
+.cont1 img{
+    width: 90px;
+    height: 70px;
+}
+.container1 span {
+    color: #F9629F;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+transition: all 0.9s ease;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #F9629F;
+    padding: 8px;
+    transition: 1.9 ease-in-out;
+    color: white;
+}
+.container2{
+    background-image: url('ASSETS/tupil1.png');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    width: 100vw;
+    height: 80vh;
+}
+.section h3{
+    font-family: cursive;
+    padding-top: 8%;
+    padding-left: 25%;
+    color: #F9629F;
+   opacity: 1;
+}
+.section p{
+    text-align: center;
+    width: 45%;
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-bottom: 2%;
+   opacity: 1;
+}
+.section button{
+    padding: 15px;
+    margin-left: 32%;
+    cursor: pointer;
+    transition: 0.9s ease-in-out; 
+    background-color: #F9629F;
+    border: none;
+    color: white;
+    opacity: 1;
+}
+ .section button:hover{
+    transform: scale(1.15);
+ }
+
+
+.section:hover h3 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.2s;
+}
+
+.section:hover p {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+
+.section:hover button {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.8s;
+}
+.section h3,
+.section p,
+.section button {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease-in-out; 
+}
+
+.section button:hover{
+    transform: scale(1.1);
+}
+ 
+
+
+
+
+
+
+
+/* /* 📱 Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container2{
+        width: 100vw;
+    }
+    .container2 h3{
+    text-align: center;
+    width: 50%; 
+    padding-top: 30%;
+    }
+    .container2 p{
+       padding-top: 5%;
+       padding-bottom: 5%;
+        width: 70%;
+    }
+}
+
+/* 📱 Small devices (landscape phones, 576px and up) */
+@media (min-width: 768px) and (max-width: 1000px) {
+
+
+    .section h3{
+        width: 60%;
+        padding-top: 30%;
+        margin-left: 3%;
+        padding-bottom: 2%;
+        font-size: 20px;
+    }
+    .section p{
+        width: 60%;
+        text-align: center;
+        padding-bottom: 6%;
+        font-size: 20px;
+    }
+    .section button{
+        margin-left: 38%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1000px) {
+    .section h3{
+        padding-top: 30%;
+        font-size: 28px;
+    }
+    .section p{
+        font-size: 30px;
+        width: 60%;
+        padding-bottom: 2%;
+    }
+    .section button{
+        margin-left: 40%;
+        padding: 20px;
+    }
+}
+ 
+    
+
+
