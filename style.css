@@ -1,0 +1,1252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container1 {
+    width: 100%;
+    background-color: white;
+    box-shadow: 10px 5px 40px whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container1 h1 {
+    color: #F9629F;
+    font-family: 'lobster';
+    letter-spacing: 5px;
+    font-size: xx-large;
+
+}
+
+.cont1 div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: px;
+    margin-top: 10px;
+}
+
+.cont1 img {
+    width: 90px;
+    height: 70px;
+}
+
+.container1 span {
+    color: #F9629F;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.9s ease;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #F9629F;
+    padding: 8px;
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+
+.container2 {
+    background-image: url('ASSETS/tupil1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 70vh;
+    margin-top: 10%;
+}
+
+.section h3 {
+    font-family: cursive;
+    padding-top: 10%;
+    padding-left: 25%;
+    color: #F9629F;
+    opacity: 1;
+}
+
+.section p {
+    text-align: center;
+    width: 45%;
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-bottom: 2%;
+    opacity: 1;
+    font-family: serif;
+}
+
+.section button {
+    padding: 15px;
+    margin-left: 35%;
+    cursor: pointer;
+    transition: 0.9s ease-in-out;
+    background-color: #F9629F;
+    border: none;
+    color: white;
+    opacity: 1;
+    font-size: 15px;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.section button:hover {
+    transform: scale(1.15);
+}
+
+.section:hover h3 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.2s;
+}
+
+.section:hover p {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+
+.section:hover button {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.8s;
+}
+
+.section h3,.section p,.section button {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease-in-out;
+}
+
+.section button:hover {
+    transform: scale(1.1);
+}
+
+/* slides*/
+.container3 h3 {
+    color: #F9629F;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.slider {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 200%;
+    gap: 20px;
+    animation: slide 8s infinite;
+}
+
+.slides img {
+    width: 250px;
+    height: 250px;
+    border: solid 1px #F9629F;
+    border-radius: 100%;
+    transition: 1s ease-in-out;
+}
+.slides img:hover{
+    transform: scale(0.9);
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-600px);
+    }
+
+    66% {
+        transform: translateX(-1200px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Flowers */
+.container5 {
+    margin-top: 2%;
+}
+
+.container5 h1 {
+    color: #F9629F;
+    margin-bottom: 3%;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.flower {
+    gap: 50px;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.box p,.bouqet p,.pot p,.basket p {
+    text-align: center;
+    color: purple;
+    font-weight: bolder;
+}
+
+.boxes img {
+    width: 250px;
+    height: 250px;
+    transition: 1s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.boxes img:hover {
+    transform: scale(1.15);
+}
+
+.boxes button{
+    padding: 10px;
+    background-color: rgb(211, 52, 211);
+    color: white;
+    border: none;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.title {
+    color: purple;
+}
+
+.boxes p {
+    margin-top: 2%;
+}
+
+.bouqets img {
+    width: 250px;
+    height: 250px;
+    transition: 1s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.bouqets img:hover {
+    transform: scale(1.15);
+}
+
+.bouqets button {
+    padding: 10px;
+    background-color: rgb(211, 52, 211);
+    color: white;
+    border: none;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.title {
+    color: purple;
+}
+
+.bouqets p {
+    margin-top: 2%;
+}
+
+.baskets,.boxes,.bouqets,.pots {
+    width: 250px;
+    height: 380px;
+    text-align: center;
+    
+}
+
+.baskets img {
+    width: 250px;
+    height: 250px;
+    transition: 1s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.baskets img:hover {
+    transform: scale(1.15);
+}
+
+.baskets button {
+    padding: 10px;
+    background-color: rgb(211, 52, 211);
+    color: white;
+    border: none;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.title {
+    color: purple;
+}
+
+.baskets p {
+    margin-top: 2%;
+}
+
+.pots img {
+    width: 250px;
+    height: 250px;
+    transition: 1s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.pots img:hover {
+    transform: scale(1.1);
+}
+
+.pots button {
+    padding: 10px;
+    background-color: rgb(211, 52, 211);
+    color: white;
+    border: none;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.title {
+    color: purple;
+}
+
+.pots p {
+    margin-top: 2%;
+}
+
+/* Offer card */
+.container4 h1 {
+    text-align: center;
+    margin-bottom: 2%;
+    color: #F9629F;
+    font-family: straight;
+    margin-top: 10%;
+}
+
+.offer1 {
+    background: linear-gradient(135deg, rgb(232, 224, 224), #ee9ca7, #fbc2eb, rgb(232, 224, 224));
+    width: 40%;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 15%;
+    box-shadow: 20px 20px 30px plum;
+    margin-top: 5%;
+}
+
+.offer1 {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+
+.offer1 img {
+    width: 150px;
+    margin-top: 4%;
+    margin-left: 50%;
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+}
+
+.offer1 img:hover {
+    transform: scale(1.1);
+}
+
+.offertext1 h2 {
+    color: red;
+    font-family: 'lobster', cursive;
+    letter-spacing: 2px;
+}
+
+.offertext1 p {
+    color: rgb(124, 24, 24);
+    margin-left: 15%;
+}
+
+.offer2 {
+    background: linear-gradient(135deg, rgb(216, 97, 216), #ee9ca7, #fbc2eb, rgb(216, 97, 216));
+    margin-left: 50%;
+    border-radius: 10px;
+    width: 40%;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    box-shadow: 10px 10px 30px purple;
+}
+
+.offertext2 h3 {
+    text-align: center;
+    margin-top: 15%;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.offerimage img {
+    margin-top: 60px;
+    width: 120px;
+    border-radius: 90px;
+    margin-left: -30%;
+    transition: 1s;
+}
+
+.offerimage img:hover {
+    transform: scale(1.1);
+}
+
+.offertext2 h4 {
+    font-weight: bolder;
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+.offertext2 h4 strong {
+    color: red;
+}
+
+.offertext2 p {
+    font-weight: bolder;
+    margin-top: 5%;
+    color: whitesmoke;
+}
+
+
+
+/* luxury */
+ .container6 {
+    margin-top: 5%;
+}
+
+.content6 h2 {
+    text-align: center;
+    color: rgb(216, 97, 216);
+}
+
+.content6 p {
+    text-align: center;
+    margin-bottom: 5%;
+    color: darkblue;
+    font-weight: bolder;
+}
+
+.luxury {
+    display: flex;
+    gap: 50px;
+    margin-left: 3%;
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.luxury1 {
+    width: 250px;
+    height: 350px;
+    border: 1.5px solid palevioletred;
+    text-align: center;
+}
+
+.luxury1 img {
+    width: 250px;
+    height: 250px;
+    transition: 1s ease-in-out;
+}
+
+.luxury1 {
+    margin-top: 7%;
+}
+
+.luxury1 h5 {
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+.luxury1 img:hover {
+    transform: scale(1.15);
+}
+
+.luxury-btn {
+    margin-top: 5%;
+    padding: 20px 50px;
+    background-color: #F9629F;
+    border: none;
+    color: white;
+    border-radius: 5%;
+    margin-left: 40%;
+    font-size: larger;
+    cursor: pointer;
+} 
+
+/* About */
+.About {
+    margin-top: 5%;
+}
+
+.About h2 {
+    text-align: center;
+    color: #F9629F;
+    margin-bottom: 2%;
+}
+
+.about1 {
+    display: flex;
+    background-color: gainsboro;
+    gap: 50px;
+    align-items: center;
+}
+
+video {
+    width: 500px;
+    border-radius: 15px;
+    border: 3px solid plum;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.aboutcontent {
+    max-width: 600px;
+    color: #4b4b4b;
+    line-height: 1.4;
+}
+
+.aboutcontent b {
+    color: red;
+}
+
+.aboutcontent p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.aboutcontent h6 {
+    font-size: 1rem;
+    font-style: italic;
+    color: purple;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* product section */
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    border: none;
+}
+
+.search-bar {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    margin-left: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 10px pink;
+    border-radius: 30px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar i {
+    color: #F9629F;
+}
+
+.product h2 {
+    margin-top: 10%;
+    text-align: center;
+    color: red;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.product1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.cost1 {
+  font-size: 18px;
+}
+
+.cost1 s {
+  color: gray;
+}
+
+.new-price {
+  margin-left: 20px;
+  font-weight: bolder;
+  color: red;
+}
+
+.div1 {
+    width: 250px;
+    height: 400px;
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.div1 img {
+    width: 250px;
+    height: 250px;
+    transition: 0.9s ease-in-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.div1 img:hover {
+    transform: scale(1.15);
+}
+
+.p-text1 {
+    color: darkgreen;
+    margin-top: 2%;
+}
+
+.cost1 {
+    margin-top: 3%;
+     color: red;
+  font-weight: bolder;
+}
+.btn button{
+    width: 91px;
+    height: 30px;
+    margin-left: 50%;
+    background-color:#F9629F;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn {
+    margin-top: 8%;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.btn i {
+    color: red;
+    font-size: 20px;
+}
+
+.product2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.div21 {
+    width: 250px;
+    height: 400px;
+    border: 1.2px solid blueviolet;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.div21 img {
+    width: 250px;
+    height: 250px;
+    transition: 0.9s ease-in-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.div21 img:hover {
+    transform: scale(1.15);
+}
+
+.p-text2 {
+    color: blue;
+    margin-top: 2%;
+}
+
+.cost2 {
+  font-size: 18px;
+  margin-top: 3%;
+   color: red;
+  font-weight: bolder;
+}
+
+.cost2 s {
+  color: gray;
+}
+
+.new-price2 {
+  margin-left: 20px;
+  font-weight: bolder;
+  color: red;
+}
+
+.btn2 {
+    margin-top: 8%;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.btn2 button{
+    width: 91px;
+    height: 30px;
+    margin-left: 50%;
+    background-color:rgb(70, 70, 229);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2 i {
+    color: red;
+    font-size: 20px;
+}
+
+.product3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.div31 {
+    width: 250px;
+    height: 400px;
+    border: 2px solid violet;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.div31 img {
+    width: 250px;
+    height: 250px;
+    transition: 0.9s ease-in-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.div31 img:hover {
+    transform: scale(1.15);
+}
+
+.p-text3 {
+    color: violet;
+    margin-top: 2%;
+}
+
+.cost3 {
+  font-size: 18px;
+  margin-top: 3%;
+  color: red;
+  font-weight: bolder;
+}
+
+.cost3 s {
+  color: gray;
+}
+
+.new-price3 {
+  margin-left: 20px;
+  font-weight: bolder;
+  color: red;
+}
+.btn3 {
+    margin-top: 8%;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.btn3 button{
+    width: 91px;
+    height: 30px;
+    margin-left: 50%;
+    background-color:violet;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn3 i {
+    color: red;
+    font-size: 20px;
+}
+
+.product4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.div41 {
+    width: 250px;
+    height: 400px;
+    border: 2px solid skyblue;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.div41 img {
+    width: 250px;
+    height: 250px;
+    transition: 0.9s ease-in-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.div41 img:hover {
+    transform: scale(1.15);
+}
+
+.p-text4 {
+    margin-top: 2%;
+    color: rgb(53, 176, 225);
+    margin-top: 2%;
+}
+
+.cost4 {
+  font-size: 18px;
+  margin-top: 3%;
+   color: red;
+  font-weight: bolder;
+}
+
+.cost4 s {
+  color: gray;
+}
+
+.new-price5 {
+  margin-left: 20px;
+  font-weight: bolder;
+  color: red;
+}
+
+.btn4 {
+    margin-top: 3%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn4 {
+    margin-top: 8%;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.btn4 button{
+    width: 91px;
+    height: 30px;
+    margin-left: 50%;
+    background-color:rgb(23, 174, 233);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn4 i {
+    color: red;
+    font-size: 20px;
+}
+
+/* luxuryproduct  */
+.luxuryheading h1{
+    margin-top: 15%;
+    text-align: center;
+    color: salmon;
+}
+.luxuryflowers{
+    margin-top: 5%;
+       display: flex;
+    gap: 90px;
+    margin-left: 5%;
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+}
+.luxuryflowers1{
+        width: 250px;
+    height: 350px;
+    text-align: center;
+}
+.luxuryflowers1 img {
+    width: 250px;
+    height: 250px;
+    transition: 1s ease-in-out;
+    border: 1px solid darkcyan;
+}
+.luxuryflowers1 img:hover {
+    transform: scale(1.15);
+}
+.luxuryflowers1 {
+    margin-top: 7%;
+}
+.price{
+    margin-top: 2%;
+    color: darkcyan;
+}
+.flowername{
+    color: rgb(233, 19, 19);
+    font-weight: bolder;
+}
+.luxbutton button{
+    background-color: darkcyan;
+    margin-top: 3%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+
+.footer {
+background: #fff0f6;;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer h2 {
+  color: #d63384;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.contact-info p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons i {
+  font-size: 26px;
+  color: #d63384;
+  margin: 0 12px;
+  padding: 12px;
+  border: 2px solid #d63384;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.social-icons i:hover {
+  background: #d63384;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Media query */
+@media (max-width: 575.98px) {
+    .container1 {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        width:100%;
+    }
+
+    .container2 {
+        height: 300px;
+    }
+
+    .container2 {
+        padding-top: 30%;
+    }
+
+    .section h3 {
+        text-align: center;
+        width: 80%;
+        padding-left: 8%;
+        padding-bottom: 2%;
+    }
+
+    .section p {
+        text-align: center;
+        width: 80%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .section button {
+        margin-bottom: 10%;
+    }
+
+    .slides img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .slides {
+        margin-top: 15%;
+    }
+
+    .container3 h3 {
+        font-size: 20px;
+        margin-top: 15%;
+        margin-left: 20px;
+    }
+
+    .container5 h1 {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .container4 h1 {
+        font-size: 25px;
+    }
+
+    .offer1 {
+        background: linear-gradient(135deg, rgb(232, 224, 224), #ee9ca7, #fbc2eb, rgb(232, 224, 224));
+        width: 70%;
+        height: 200px;
+        margin-left: 15%;
+        display: flex;
+        gap: 0%;
+    }
+
+    .offer1 img {
+        margin-left: 5%;
+        width: 100px;
+    }
+
+    .offertext1 {
+        margin-left: 0%;
+    }
+
+    .offertext1 h2 {
+        font-size: 15px;
+        padding-top: 10%;
+    }
+
+    .offertext1 h3 {
+        font-size: 12px;
+        margin-left: 10px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .offer2 {
+        width: 70%;
+        height: 230px;
+        margin-left:15%;
+        display: flex;
+    }
+
+    .offertext2 h3 {
+        font-size: 15px;
+    }
+
+    .offertext2 h4 {
+        font-size: 12px;
+    }
+
+    .boxes,.bouqets,.pots,.baskets {
+        margin-left: 18%;
+    }
+
+    .luxury1,.luxury2,.luxury3,.luxury4 {
+        margin-left: 18%;
+    }
+
+    .luxury-btn {
+        margin-left: 20%;
+    }
+   
+    .about1 {
+        flex-wrap: wrap;
+    }
+
+    video {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    .aboutcontent {
+        font-size: 10px;
+        white-space: 200px;
+    }
+
+    .aboutcontent p {
+        font-size: 15px;
+        margin-left: 5%;
+    }
+
+    .aboutcontent h6 {
+        margin-left: 20%;
+        width: 60%;
+         text-align: center;
+         margin-bottom: 20px;
+    }
+    .product1,.product2,.product3,.product4{
+        margin-left: 15%;
+    }
+    .luxuryflowers{
+        margin-left: 15%;
+    }
+    }
+
+ @media (min-width: 608px)and (max-width:768px) { 
+    .section h3 {
+        padding-top: 25%;
+        width: 50%;
+        padding-left: 20%;
+        text-align: center;
+    }
+
+    .section p {
+        width: 60%;
+    }
+
+    .offer1 {
+        width: 75%;
+        height: 250px;
+    }
+
+    .offer2 {
+        width: 71%;
+        margin-left: 25%;
+    }
+
+    .about1 {
+        flex-wrap: wrap;
+    }
+
+    video {
+        width: 500px;
+        margin-left: 30%;
+    }
+
+    .aboutcontent {
+        font-size: 30px;
+        white-space: 200px;
+    }
+
+    .aboutcontent p {
+        font-size: 15px;
+        margin-left: 5%;
+    }
+
+    .aboutcontent h6 {
+        margin-left: 20%;
+        width: 60%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+} 
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .container2 {
+        height: 500px;
+    } 
+    .section h3{
+        padding-top: 25%;
+        width: 50%;
+        text-align: center;
+        margin-left: -10%;
+    }
+    .section p{
+        width: 55%;
+        padding-bottom: 3%;
+    }
+    .flower{
+        margin-left: 10%;
+    }
+    .offer1{
+        width: 65%;
+    }
+    .offer2{
+        width: 60%;
+        margin-left: 30%;
+    }
+    .luxury{
+        margin-left: 15%;
+    }
+    .about1 {
+        flex-wrap: wrap;
+    }
+
+    video {
+        width: 500px;
+    }
+
+    .aboutcontent {
+        margin-top: 20px;
+        font-size: 10px;
+        white-space: 200px;
+    }
+
+    .aboutcontent p {
+        font-size: 15px;
+        margin-left: 25%;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .aboutcontent h6 {
+        margin-left: 25%;
+        width: 60%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .container2{
+        height: 500px;
+    }
+    .section h3{
+        padding-top: 15%;
+        width: 40%;
+        text-align: center;
+    }
+    .section p{
+        margin-left: 5%;
+    }
+    .offer1,.offer2{
+        width: 50%;
+    }
+    .offer2{
+        margin-left: 35%;
+    }
+      .aboutcontent p {
+        margin-top: 20px;
+    }
+   
+}
+
+
